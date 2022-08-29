@@ -1,0 +1,10 @@
+.controls,
+.etchpad {
+    display:flex;
+    max-width: 960px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
