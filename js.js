@@ -10,12 +10,6 @@ function createEtchPad() {
     return paras;
 };
 
-function test() {
-    for (item of etchPad.childNodes) {
-        console.log(item);
-    }
-}
-
 function  defBoxSizeStyle() {
     etchPad.childNodes.forEach((para) => {
             console.log(para);
@@ -24,5 +18,6 @@ function  defBoxSizeStyle() {
             para.style.height = `${960/16}px`;
             para.style.margin = "0px";
             para.style.border = "1px solid lightgrey";
+            para.addEventListener(('mouseover'), () => para.style.backgroundColor = "red");
         });
 };
