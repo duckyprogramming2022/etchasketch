@@ -11,6 +11,7 @@ function createEtchPad() {
 };
 
 function  defBoxSizeStyle() {
+    etchPad.style.border = "2px solid black";
     etchPad.childNodes.forEach((para) => {
             console.log(para);
             para.style.boxSizing = "border-box";
