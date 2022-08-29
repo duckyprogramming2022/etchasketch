@@ -1,6 +1,7 @@
 const etchPad = document.querySelector('.etchpad');
+ 
 
-console.log(etchPad.style.Width);
+etchPad.addEventListener('mouseover')
 
 function createEtchPad() {
     let rows = 1;
@@ -8,11 +9,12 @@ function createEtchPad() {
             const para = document.createElement('p');
             etchPad.appendChild(para);
         };
+    const paras = document.querySelectorAll('p')
+    defBoxSize(paras);
 };
 
-function  defBoxSize() {
-    const paras = document.querySelectorAll('p') 
-    paras.forEach((para) => {
+function  defBoxSize(paras) {
+        paras.forEach((para) => {
         console.log(para);
         para.style.boxSizing = "border-box";
         width = 960/16;
