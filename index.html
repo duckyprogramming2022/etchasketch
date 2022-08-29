@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="controls">
-        <button id="create">Create Grid</button>
+        <button id="create" onclick="createEtchPad()">Create Grid</button>
         <input id="gridsize" type="text" placeholder=" Enter Gridsize: 1 to 96">
-        <button id="restart">Restart</button>
+        <button id="restart" onclick="restart()">Restart</button>
     </div>
     <div class="etchpad"></div>
 
-    <script src="js.js"></script>
+    <script src="js.js" defer></script>
 </body>
 </html>
