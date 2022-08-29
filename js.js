@@ -1,7 +1,4 @@
 const etchPad = document.querySelector('.etchpad');
- 
-
-etchPad.addEventListener('mouseover')
 
 function createEtchPad() {
     let rows = 1;
@@ -10,21 +7,16 @@ function createEtchPad() {
             etchPad.appendChild(para);
         };
     const paras = document.querySelectorAll('p')
-    defBoxSize(paras);
-    defBoxStyle(paras);
+    return paras;
 };
 
-function  defBoxSize(paras) {
+function  defBoxSize() {
+        paras = createEtchPad();
         paras.forEach((para) => {
             console.log(para);
             para.style.boxSizing = "border-box";
             para.style.width = `${960/16}px`;
             para.style.height = `${960/16}px`;
-        });
-};
-
-function defBoxStyle(paras) {
-        paras.forEach((para) => {
             para.style.margin = "0px";
             para.style.border = "1px solid lightgrey";
         });
