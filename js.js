@@ -1,4 +1,13 @@
 const etchPad = document.querySelector('.etchpad');
+const input = document.querySelector('input');
+
+let gridSize = praseInt(
+    input.addEventListener('keydown', function(e){
+        if (e.key === 'Enter') {
+            return e.target.value;
+        };
+    });
+)
 
 function createEtchPad() {
     let rows = 1;
