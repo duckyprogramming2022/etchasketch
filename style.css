@@ -8,3 +8,10 @@
     margin-inline: auto;
     margin-bottom: 20px;
 }
+
+.controls {
+    height: 50px;
+    border: 2px solid black;
+    justify-content: space-around;
+    margin.bottom: 20px;
+}
