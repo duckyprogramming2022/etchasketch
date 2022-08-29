@@ -10,7 +10,7 @@ function createEtchPad() {
     return paras;
 };
 
-function  defBoxSize() {
+function  defBoxSizeStyle() {
         paras = createEtchPad();
         paras.forEach((para) => {
             console.log(para);
