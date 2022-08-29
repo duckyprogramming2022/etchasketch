@@ -10,9 +10,14 @@ function createEtchPad() {
     return paras;
 };
 
+function test() {
+    for (item of etchPad.childNodes) {
+        console.log(item);
+    }
+}
+
 function  defBoxSizeStyle() {
-        paras = createEtchPad();
-        paras.forEach((para) => {
+    etchPad.childNodes.forEach((para) => {
             console.log(para);
             para.style.boxSizing = "border-box";
             para.style.width = `${960/16}px`;
