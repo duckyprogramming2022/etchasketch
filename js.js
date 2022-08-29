@@ -11,6 +11,7 @@ function createEtchPad() {
         };
     const paras = document.querySelectorAll('p')
     defBoxSize(paras);
+    defBoxStyle(paras);
 };
 
 function  defBoxSize(paras) {
@@ -18,6 +19,11 @@ function  defBoxSize(paras) {
         console.log(para);
         para.style.boxSizing = "border-box";
         width = 960/16;
+    });
+};
+
+function defBoxStyle(paras) {
+        paras.forEach((para) => {
         para.style.width = `${960/16}px`;
         para.style.height = `${960/16}px`;
         para.style.margin = "0px";
